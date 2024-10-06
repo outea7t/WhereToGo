@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p, h1 {
+  font-family: Futura;
+  font-weight: bold;
+  margin-left: 6.86vw;
+}
+
+
+.start-page-background-container {
+  z-index: -1;
+}
+
+.first-header-text,
+.second-header-text {
+  color: #FF7777;
+  font-size: 7.1em;
+}
+
+.first-header-text {
+  margin-top: -30.5vh;
+}
+
+.top-background-lines-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin-top: -15px;
+}
+
+.background-lines-1, 
+.background-lines-2,
+.background-lines-3,
+.background-lines-4,
+.background-lines-5 {
+  filter: invert(30%) sepia(9%) saturate(178%) hue-rotate(2deg) brightness(94%) contrast(87%);
+}
+
+.background-lines-1 {
+  width: 30vw;
+}
+
+.background-lines-2 {
+  width: 100vh;
+  margin-top: -5vh;
+}
+
+.star-icon,
+.cloud-icon,
+.lightning-icon,
+.kiss-icon {
+  filter: invert(50%) sepia(77%) saturate(516%) hue-rotate(313deg) brightness(115%) contrast(111%);
+}
+
+.star-icon {
+  width: 20vh;
+  transform: translate(-12vw, -15vh) rotate(15deg);
+  z-index: -1;
+}
+
+.cloud-icon {
+  width: 20vh;
+  transform: translate(-5vw, -5vh) rotate(-15deg);
+}
+
+.lightning-icon {
+  width: 13vh;
+  transform: translate(-20vw, -1vh) rotate(30deg);
+}
+
+.description-text {
+  color: #8F93FF;
+  font-size: 3.1em;
+  margin-right: 20vw;
+  width: 90vw;
+}
+
+.first-text-block-container {
+  margin-top: -5vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-text-block-icons-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.background-lines-3 {
+  margin-top: -19vh;
+}
+
+.kiss-icon {
+  width: 12vw;
+  margin-left: 7vw;
+  transform: translateY(-30vh) rotate(10deg);
+}
+
+.second-header-text {
+  margin-top: -10vh;
+}
+
+.second-text-block-container {
+  margin-top: -5vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.second-text-block-icons-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.eat-button {
+  transform: translate(-20vw, 1vh);
+}
+
+.second-text-block-container .description-text {
+  margin-right: 10vw;
+}
+
+.date-button {
+  transform: translate(-5vw, 7vh);
+}
+
+.extreme-button {
+  transform: translate(-18vw, 22vh);
+}

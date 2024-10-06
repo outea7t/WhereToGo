@@ -1,0 +1,103 @@
+body {
+  background-color: #FFF7E7;
+}
+
+.header-label {
+  color: #FF7777;
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 6em;
+
+  margin-top: 5.3vw;
+  margin-left: 8vw;
+}
+
+.option-button {
+  background-color: #FFF7E7;
+
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #8F93FF;
+
+  border-color: #8F93FF;
+  border: solid;
+  border-radius: 20px;
+  border-width: 5px;
+
+  padding: 18px;
+  padding-left: 140px;
+  padding-right: 140px;
+
+  margin-bottom: 2vh;
+  margin-right: 2vh;
+  transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+.option-button:hover {
+  background-color: #8F93FF;
+  color: #FFF7E7;
+  border-color: #8F93FF;
+}
+
+.option-button:active {
+  box-shadow: 0 8px 11px 0px rgba(0, 0, 0, .25);
+}
+
+.option-button.choosed {
+  box-shadow: 0 8px 11px 0px rgba(0, 0, 0, .25);
+  background-color: #8F93FF;
+  color: #FFF7E7;
+  border-color: #8F93FF;
+}
+
+.option-buttons-container {
+  margin-left: 6vw;
+  margin-top: -4vh;
+}
+
+.next-button {
+  background-color: #FF7777;
+
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #FFF7E7;
+  
+  border-radius: 20px;
+  border: none;
+
+  padding: 23px;
+  padding-left: 140px;
+  padding-right: 140px;
+
+  margin-bottom: 20px;
+  margin-right: 20px;
+  transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+.next-button:hover {
+  box-shadow: 0 8px 11px 0px rgba(0, 0, 0, .25);
+}
+
+.next-button-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.next-button-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.next-button-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.next-button-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.25s, transform 0.25s;
+}

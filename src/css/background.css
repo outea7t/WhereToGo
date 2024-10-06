@@ -1,0 +1,65 @@
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.background-lines-image {
+  filter: invert(30%) sepia(9%) saturate(178%) hue-rotate(2deg) brightness(94%) contrast(87%);
+  width: 25%;
+  display: flex;
+}
+
+.confetti-image,
+.baloon-image,
+.note-image {
+  display: flex;
+  height: 17%;
+  margin-left: auto;
+  filter: invert(50%) sepia(77%) saturate(516%) hue-rotate(313deg) brightness(115%) contrast(111%);
+}
+
+.confetti-image {
+  margin-right: 10vw;
+  margin-top: -7vh;
+  transform: rotate(-6deg);
+}
+
+.baloon-image {
+  margin-right: 10vw;
+  margin-top: 5vh;
+  transform: rotate(-28deg);
+}
+
+.note-image {
+  margin-right: 10vw;
+  margin-top: 4vh;
+  transform: rotate(23deg);
+} 
+
+.background-button--filled, .background-button--outlined {
+  font-family: Futura;
+  font-weight: 600;
+  font-size: 1.2em;
+
+  border: solid;
+  border-width: 4px;
+  border-radius: 1000px;
+
+  padding: 1.7vh 7.4vw;
+} 
+
+.background-button--outlined {
+  color: #FF7777;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.background-button--filled {
+  color: #FFF7E7;
+  border-color: #FF7777;
+  background-color: #FF7777;
+}
+

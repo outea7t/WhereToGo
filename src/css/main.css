@@ -58,18 +58,17 @@ body {
 
 .next-button {
   background-color: #FF7777;
-
+  cursor: pointer;
+  
   font-family: Futura;
   font-weight: bold;
   font-size: 1.6em;
   color: #FFF7E7;
   
-  border-radius: 20px;
+  border-radius: 3vh;
   border: none;
 
-  padding: 23px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding: 2vh 14vw;
 
   margin-bottom: 20px;
   margin-right: 20px;

@@ -20,24 +20,9 @@ class StartPageBackground extends React.Component {
   render() {
     return (
       <div className="start-page-background-container">
-        
-        
-
-        <BackgroundButton title="Поесть" shouldBeOutlined={true} rotationAngle={-9}/>
-        <BackgroundButton title="Свидание" shouldBeOutlined={true} rotationAngle={19}/>
-        <BackgroundButton title="Экстрима" shouldBeOutlined={false} rotationAngle={-15}/>
-
-        <img src={backgroundLines_4} className="background-lines-4" alt="background lines 4"/>
-
-        <div className="">
-          <img src={map} className="map-icon" alt="map icon" />
-          <img src={mapPin} className="map-pin-icon" alt="map pin icon"/>
-        </div>
 
         <div className="bottom-icons-container">
-          <BackgroundButton title="2000р" shouldBeOutlined={true} rotationAngle={9}/>
-          <BackgroundButton title="Досуг в дали от города" shouldBeOutlined={false} rotationAngle={21} />
-          <img src={ruble} className="ruble-icon" alt="ruble-icon"/>
+          
         </div>
       </div>
     )

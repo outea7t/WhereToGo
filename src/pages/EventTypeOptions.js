@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import HeaderLabel from "../components/HeaderLabel";
 import OptionButton from "../components/OptionButton";
 import Background from "../components/Background";
 import NextButton from "../components/NextButton";
 
 import EventType from "../model/EventData"
+import RoutePagePaths from "../model/RoutePagePaths";
 
 class EventTypeOptions extends React.Component {
   render() {
@@ -30,7 +33,10 @@ class EventTypeOptions extends React.Component {
           <div>
             <OptionButton title="Спектакля" id={EventType.spectacle}/>
           </div>
-          <NextButton title="Следующий шаг"/>        
+          
+          <Link to={RoutePagePaths.MONEY_AMOUNT_OPTIONS}>
+            <NextButton title="Следующий шаг"/>        
+          </Link>
         </div>
         <Background />
     </div>

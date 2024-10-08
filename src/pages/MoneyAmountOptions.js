@@ -1,4 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import RoutePagePaths from "../model/RoutePagePaths";
+
 import HeaderLabel from "../components/HeaderLabel";
 import OptionButton from "../components/OptionButton";
 import Background from "../components/Background";
@@ -29,7 +33,10 @@ class MoneyAmountOptions extends React.Component {
             <OptionButton title="5000р" id={5000}/>
             <OptionButton title="5000р+" id={20000}/>
           </div>
-          <NextButton title="Следующий шаг"/>
+
+          <Link to={RoutePagePaths.RADIUS_OPTIONS}>
+            <NextButton title="Следующий шаг"/>
+          </Link>
         </div>
         <Background />
       </div>

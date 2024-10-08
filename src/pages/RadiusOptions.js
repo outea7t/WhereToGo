@@ -1,4 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import RoutePagePaths from "../model/RoutePagePaths";
+
 import HeaderLabel from "../components/HeaderLabel";
 import OptionButton from "../components/OptionButton";
 import Background from "../components/Background";
@@ -27,7 +31,9 @@ class RadiusOptions extends React.Component {
           <div>
             <OptionButton title="70км+" id={140} />
           </div>
-          <NextButton title="Следующий шаг" />
+          <Link to={RoutePagePaths.SUGGESTS}>
+            <NextButton title="Следующий шаг" />
+          </Link>
         </div>
         <Background />
       </div>

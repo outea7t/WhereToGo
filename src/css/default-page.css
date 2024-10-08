@@ -1,0 +1,71 @@
+.default-page-lines-1,
+.default-page-lines-2 {
+  filter: invert(30%) sepia(9%) saturate(178%) hue-rotate(2deg) brightness(94%) contrast(87%);
+}
+
+p, h1 {
+  font-family: Futura;
+  font-weight: bold;
+  margin-left: 10.86vw;
+}
+
+.default-page-lines-1 {
+  width: 36vw;
+  position: relative;
+  top: 0;
+}
+
+.header-text {
+  color: #FF7777;
+  font-size: 6.6em;
+  margin-top: -25vh;
+}
+
+.text-block-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.text-block-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -19vh;
+}
+
+.default-page-note,
+.default-page-map {
+  filter: invert(50%) sepia(77%) saturate(516%) hue-rotate(313deg) brightness(115%) contrast(111%);
+}
+
+.default-page-note {
+  width: 8vw;
+  transform: translate(-10vw, -14vh) rotate(23deg);
+}
+
+.default-page-map {
+  width: 8vw;
+  transform: translate(-3vw, 0vh) rotate(-20deg);
+}
+
+.text-block-container .description-text {
+  margin-top: 1vh;
+}
+
+.default-page-next-button .next-button {
+  padding: 3.5vh 15vw;
+  margin-left: 10.86vw;
+}
+
+.default-page-eat-button {
+  transform: translate(-6vw, 13vh);
+}
+
+.default-page-lines-2 {
+  position: relative;
+  bottom: 0;
+  width: 87vw;
+}

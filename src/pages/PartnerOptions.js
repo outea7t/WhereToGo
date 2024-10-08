@@ -1,12 +1,15 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
 
+import RoutePagePaths from "../model/RoutePagePaths";
+
 import HeaderLabel from "../components/HeaderLabel";
 import OptionButton from "../components/OptionButton";
 import Background from "../components/Background";
 import NextButton from "../components/NextButton";
 
 import Partner from "../model/EventData"
+import { Link } from "react-router-dom";
 
 class PartnerOptions extends React.Component {
   constructor(props) {
@@ -69,7 +72,9 @@ class PartnerOptions extends React.Component {
           timeout={250} 
           classNames="next-button" 
           unmountOnExit>
+            <Link to={RoutePagePaths.EVENT_TYPE_OPTIONS}>
               <NextButton title="Следующий шаг" />
+            </Link>
           </CSSTransition>
         </div>
         <Background />

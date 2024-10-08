@@ -15,9 +15,10 @@ p, h1 {
 }
 
 .first-header-text,
-.second-header-text {
+.second-header-text,
+.third-header-text {
   color: #FF7777;
-  font-size: 7.1em;
+  font-size: 6.6em;
 }
 
 .first-header-text {
@@ -56,14 +57,17 @@ p, h1 {
 .star-icon,
 .cloud-icon,
 .lightning-icon,
-.kiss-icon {
+.kiss-icon,
+.map-icon,
+.map-pin-icon,
+.ruble-icon {
   filter: invert(50%) sepia(77%) saturate(516%) hue-rotate(313deg) brightness(115%) contrast(111%);
 }
 
 .star-icon {
   width: 20vh;
-  transform: translate(-12vw, -15vh) rotate(15deg);
-  z-index: -1;
+  transform: translate(-20vw, -12vh) rotate(15deg);
+  align-content: center;
 }
 
 .cloud-icon {
@@ -78,25 +82,34 @@ p, h1 {
 
 .description-text {
   color: #8F93FF;
-  font-size: 3.1em;
+  font-size: 2.5em;
   margin-right: 20vw;
-  width: 90vw;
+  width: 50vw;
 }
 
 .first-text-block-container {
   margin-top: -5vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-text-block-container .description-text {
+  transform: translateY(-10vh);
 }
 
 .first-text-block-icons-container {
   display: flex;
   flex-direction: column;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  margin-right: 10vw;
 }
 
 .background-lines-3 {
-  margin-top: -19vh;
+  margin-top: -15vh;
 }
 
 .kiss-icon {
@@ -107,26 +120,32 @@ p, h1 {
 
 .second-header-text {
   margin-top: -10vh;
+  margin-right: 0vw;
 }
 
 .second-text-block-container {
   margin-top: -5vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .second-text-block-icons-container {
   display: flex;
   flex-direction: column;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  margin-right: 10vw;
 }
 
 .eat-button {
-  transform: translate(-20vw, 1vh);
+  transform: translate(-10vw, -4vh);
 }
 
 .second-text-block-container .description-text {
-  margin-right: 10vw;
+  margin-right: 5vw;
 }
 
 .date-button {
@@ -135,4 +154,64 @@ p, h1 {
 
 .extreme-button {
   transform: translate(-18vw, 22vh);
+}
+
+.third-header-text {
+  margin-top: -10vh;
+}
+
+.third-text-block-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.third-text-block-container p {
+  text-indent: 1em;
+  list-style-type:disc;
+  display:list-item;
+}
+.third-text-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0vh;
+}
+
+.third-text-block-icons-container-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-text-block-icons-container-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10vw;
+}
+.map-icon {
+  width: 8vw;
+  transform: translate(-10vw, -10vh) rotate(-20deg);
+}
+
+.map-pin-icon {
+  width: 8vw;
+  transform: rotate(14deg);
+}
+
+.two-thousand-ruble-button {
+  transform: translate(0vw, -5vh);
+  margin-right: 10vw;
+}
+
+.third-text-block-icons-container-horizontal .next-button {
+  margin-top: 10vh;
+  padding: 5vh 15vw;
+  margin-left: 6.86vw;
+  white-space: nowrap;
 }

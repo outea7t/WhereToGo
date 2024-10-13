@@ -16,13 +16,13 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Routes>
-        <Route path={RoutePagePaths.DEFAULT} element={<DefaultPage />} />
         <Route path={RoutePagePaths.START} element={<Start />} />
         <Route path={RoutePagePaths.PARTNER_OPTIONS} element={<PartnerOptions />} />
         <Route path={RoutePagePaths.EVENT_TYPE_OPTIONS} element={<EventTypeOptions />} />
         <Route path={RoutePagePaths.MONEY_AMOUNT_OPTIONS} element={<MoneyAmountOptions />} />
         <Route path={RoutePagePaths.RADIUS_OPTIONS} element={<RadiusOptions />} />
         <Route path={RoutePagePaths.SUGGESTS} element={<Suggests />} />
+        <Route path={RoutePagePaths.DEFAULT} element={<DefaultPage />} />
         </Routes>
       </BrowserRouter>
     )

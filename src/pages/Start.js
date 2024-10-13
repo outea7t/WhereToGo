@@ -19,7 +19,6 @@ import lightning from "../img/lightning.svg"
 import kiss from "../img/kiss.svg"
 import map from "../img/map.svg"
 import mapPin from "../img/map-pin.svg"
-import ruble from "../img/ruble.svg"
 import { Link } from "react-router-dom";
 
 class Start extends React.Component {

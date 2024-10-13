@@ -5,6 +5,7 @@ import RoutePagePaths from "../model/RoutePagePaths";
 
 import NextButton from "../components/NextButton";
 import BackgroundButton from "../components/BackgroundButton";
+import FadeInSection from "../components/FadeInSection";
 
 import backgroundLines_1 from "../img/default-page-lines-1.svg"
 import backgroundLines_2 from "../img/default-page-lines-2.svg"
@@ -15,29 +16,45 @@ class DefaultPage extends React.Component {
   render() {
     return (
       <div>
-        <img src={backgroundLines_1} className="default-page-lines-1" alt="default page lines 1"/>
-        <h1 className="header-text">
-          Тут ничего нет...
-        </h1>
+        <FadeInSection delay={"0s"}>
+          <img src={backgroundLines_1} className="default-page-lines-1" alt="default page lines 1"/>
+        </FadeInSection>
+        <FadeInSection delay={"0.2s"}>
+          <h1 className="header-text">
+            Тут ничего нет...
+          </h1>
+        </FadeInSection>
 
         <div className="text-block-container">
-          <p className="description-text">
-            Но отсюда вы можете перейти на начальную страницу и насладится всеми функциями приложения
-          </p>
+          <FadeInSection delay={"0.3s"}>
+            <p className="description-text">
+              Но отсюда вы можете перейти на начальную страницу и насладится всеми функциями приложения
+            </p>
+          </FadeInSection>
           <div className="text-block-icons-container">
-            <img src={note} className="default-page-note" alt="note"/>
-            <img src={map} className="default-page-map" alt="map"/>
+            <FadeInSection delay={"0.3s"}>
+              <img src={note} className="default-page-note" alt="note"/>
+            </FadeInSection>
+            <FadeInSection delay={"0.45s"}>
+              <img src={map} className="default-page-map" alt="map"/>
+            </FadeInSection>
             <div className="default-page-eat-button">
-              <BackgroundButton title="Поесть" shouldBeOutlined={true} rotationAngle={-9}/>
+              <FadeInSection delay={"0.6s"}>
+                <BackgroundButton title="Поесть" shouldBeOutlined={true} rotationAngle={-9}/>
+              </FadeInSection>
             </div>
           </div>
         </div>
         <div className="default-page-next-button">
           <Link to={RoutePagePaths.START}>
-            <NextButton title="Перейти" />
+            <FadeInSection delay={"0.6s"}>
+              <NextButton title="Перейти" />
+            </FadeInSection>
           </Link>
         </div>
-        <img src={backgroundLines_2} className="default-page-lines-2" alt="default page lines 2"/>
+        <FadeInSection delay={"0.75s"}>
+          <img src={backgroundLines_2} className="default-page-lines-2" alt="default page lines 2"/>
+        </FadeInSection>
       </div>
     )
   }

@@ -22,16 +22,14 @@ body {
 
   border-color: #8F93FF;
   border: solid;
-  border-radius: 20px;
-  border-width: 5px;
+  border-radius: 2vh;
+  border-width: 0.65vh;
 
-  padding: 18px;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding: 1.8vh 8vw;
 
   margin-bottom: 2vh;
   margin-right: 2vh;
-  transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
+  transition: background-color 0.25s, color 0.25s, box-shadow 0.25s, opacity 0.1s;
 }
 
 .option-button:hover {
@@ -41,11 +39,12 @@ body {
 }
 
 .option-button:active {
-  box-shadow: 0 8px 11px 0px rgba(0, 0, 0, .25);
+  box-shadow: 0 0.35vh 1vh 0px rgba(0, 0, 0, .25);
+  opacity: 0.9;
 }
 
 .option-button.choosed {
-  box-shadow: 0 8px 11px 0px rgba(0, 0, 0, .25);
+  box-shadow: 0 0.3vh 1vh 0px rgba(0, 0, 0, .25);
   background-color: #8F93FF;
   color: #FFF7E7;
   border-color: #8F93FF;
@@ -65,10 +64,10 @@ body {
   font-size: 1.6em;
   color: #FFF7E7;
   
-  border-radius: 3vh;
+  border-radius: 2vh;
   border: none;
 
-  padding: 2vh 14vw;
+  padding: 2.45vh 14vw;
 
   margin-bottom: 20px;
   margin-right: 20px;
@@ -76,14 +75,12 @@ body {
 }
 
 .next-button:hover {
-  box-shadow: 0 8px 11px 0px rgba(0, 0, 0, .25);
+  box-shadow: 0 0.7vh 1vh 0px rgba(0, 0, 0, .25);
 }
-
-
 
 .next-button-enter {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(2vh);
 }
 
 .next-button-enter-active {
@@ -99,6 +96,6 @@ body {
 
 .next-button-exit-active {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(2vh);
   transition: opacity 0.25s, transform 0.25s;
 }

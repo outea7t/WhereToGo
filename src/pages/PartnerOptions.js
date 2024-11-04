@@ -10,6 +10,7 @@ import NextButton from "../components/NextButton";
 
 import Partner from "../model/EventData"
 import { Link } from "react-router-dom";
+import FadeInSection from "../components/FadeInSection";
 
 class PartnerOptions extends React.Component {
   constructor(props) {
@@ -46,25 +47,43 @@ class PartnerOptions extends React.Component {
   render() {
     return (
       <div>
-        <HeaderLabel title="C кем" />
+        <FadeInSection delay={"0s"}>
+          <HeaderLabel title="C кем" />
+        </FadeInSection>
         <div className="option-buttons-container">
           <div> 
-            <OptionButton title="Иду один" id={Partner.single} onStateChange={this.optionButtonStateChanged}/>
-            <OptionButton title="Свидание" id={Partner.date} onStateChange={this.optionButtonStateChanged}/>
+            <FadeInSection delay={"0.1s"}>
+              <OptionButton title="Иду один" id={Partner.single} onStateChange={this.optionButtonStateChanged}/>
+            </FadeInSection>
+            <FadeInSection delay={"0.17s"}>
+              <OptionButton title="Свидание" id={Partner.date} onStateChange={this.optionButtonStateChanged}/>
+            </FadeInSection>
           </div>
           <div>
-            <OptionButton title="С друзьями" id={Partner.friends} onStateChange={this.optionButtonStateChanged}/>
-            <OptionButton title="С детьми" id={Partner.childrens} onStateChange={this.optionButtonStateChanged}/>
+            <FadeInSection delay={"0.24s"}>
+              <OptionButton title="С друзьями" id={Partner.friends} onStateChange={this.optionButtonStateChanged}/>
+            </FadeInSection>
+            <FadeInSection delay={"0.31s"}>
+              <OptionButton title="С детьми" id={Partner.childrens} onStateChange={this.optionButtonStateChanged}/>
+            </FadeInSection>
           </div>
           <div>
-            <OptionButton title="С коллегами" id={Partner.colleagues} onStateChange={this.optionButtonStateChanged}/>
-            <OptionButton title="С родителями" id={Partner.parents} onStateChange={this.optionButtonStateChanged}/>
+            <FadeInSection delay={"0.38s"}>
+              <OptionButton title="С коллегами" id={Partner.colleagues} onStateChange={this.optionButtonStateChanged}/>
+            </FadeInSection>
+            <FadeInSection delay={"0.45s"}>
+              <OptionButton title="С родителями" id={Partner.parents} onStateChange={this.optionButtonStateChanged}/>
+            </FadeInSection>
           </div>
           <div>
-            <OptionButton title="С большой компанией" id={Partner.bigCompany} onStateChange={this.optionButtonStateChanged}/>
+            <FadeInSection delay={"0.52s"}>
+              <OptionButton title="С большой компанией" id={Partner.bigCompany} onStateChange={this.optionButtonStateChanged}/>
+            </FadeInSection>
           </div>
           <div>
-            <OptionButton title="Досуг в дали от города" id={Partner.singleOutOfTown} onStateChange={this.optionButtonStateChanged}/>
+            <FadeInSection delay={"0.59s"}>
+              <OptionButton title="Досуг в дали от города" id={Partner.singleOutOfTown} onStateChange={this.optionButtonStateChanged}/>
+            </FadeInSection>
           </div>
           
           <CSSTransition 
@@ -77,7 +96,9 @@ class PartnerOptions extends React.Component {
             </Link>
           </CSSTransition>
         </div>
-        <Background />
+        <FadeInSection delay={"0s"}>
+          <Background />
+        </FadeInSection>
       </div>
     )
   }

@@ -10,9 +10,11 @@ class Background extends React.Component {
         return (
             <div className="background-container">
                 <img src={backgroundLines} className="background-lines-image" alt="backgroundLinesImage"/>
-                <img src={confetti} className="confetti-image" alt="confetti"/>
-                <img src={baloon} className="baloon-image" alt="baloonImage"/>
-                <img src={note} className="note-image" alt="noteImage"/>
+                <div className="background-icons-container">
+                  <img src={confetti} className="confetti-image" alt="confetti"/>
+                  <img src={baloon} className="baloon-image" alt="baloonImage"/>
+                  <img src={note} className="note-image" alt="noteImage"/>
+                </div>
             </div>
         )
     }

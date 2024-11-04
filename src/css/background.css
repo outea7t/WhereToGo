@@ -7,17 +7,23 @@
   height: 100%;
 }
 
+.background-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6vh;
+}
+
 .background-lines-image {
   filter: invert(30%) sepia(9%) saturate(178%) hue-rotate(2deg) brightness(94%) contrast(87%);
   width: 25%;
-  display: flex;
 }
 
 .confetti-image,
 .baloon-image,
 .note-image {
-  display: flex;
-  height: 17%;
+  height: 20vh;
   margin-left: auto;
   filter: invert(50%) sepia(77%) saturate(516%) hue-rotate(313deg) brightness(115%) contrast(111%);
 }
@@ -25,19 +31,19 @@
 .confetti-image {
   margin-right: 10vw;
   margin-top: -7vh;
-  transform: rotate(-6deg);
+  transform: translate(-5vw, -15vh) rotate(-6deg);
 }
 
 .baloon-image {
   margin-right: 10vw;
   margin-top: 5vh;
-  transform: rotate(-28deg);
+  transform: translate(-0vw, -10vh) rotate(-28deg);
 }
 
 .note-image {
   margin-right: 10vw;
   margin-top: 4vh;
-  transform: rotate(23deg);
+  transform: translate(-13vw, -5vh) rotate(23deg);
 } 
 
 .background-button--filled, .background-button--outlined {

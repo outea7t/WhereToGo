@@ -3,7 +3,6 @@ import React from "react";
 
 import RoutePagePaths from "../model/RoutePagePaths.js";
 
-import StartPageBackground from "../components/StartPageBackground"
 import BackgroundButton from "../components/BackgroundButton.js";
 import FadeInSection from "../components/FadeInSection.js";
 

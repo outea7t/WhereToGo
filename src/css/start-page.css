@@ -210,8 +210,8 @@ p, h1 {
 }
 
 .third-text-block-icons-container-horizontal .next-button {
-  margin-top: 10vh;
-  padding: 5vh 15vw;
-  margin-left: 6.86vw;
-  white-space: nowrap;
+  padding: 3.5vh 15vw;
+  margin-left: 10.86vw;
+  margin-top: 1vh;
+  text-wrap: nowrap;
 }

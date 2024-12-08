@@ -1,5 +1,6 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
+import { Link } from "react-router-dom";
 
 import RoutePagePaths from "../model/RoutePagePaths";
 
@@ -8,8 +9,7 @@ import OptionButton from "../components/OptionButton";
 import Background from "../components/Background";
 import NextButton from "../components/NextButton";
 
-import Partner from "../model/EventData"
-import { Link } from "react-router-dom";
+import Partner from "../model/PartnerData"
 import FadeInSection from "../components/FadeInSection";
 
 class PartnerOptions extends React.Component {
@@ -29,6 +29,20 @@ class PartnerOptions extends React.Component {
       },
       isAnyButtonSelected: 0
     }
+  }
+
+  handleClick = () => {
+    let selectedOptions = []
+    const buttons = this.state.buttons
+
+    Object.keys(buttons).forEach(key => {
+      if (buttons[key]) {
+        selectedOptions.push(key)
+      }
+    })
+
+    selectedOptions.sort()
+    localStorage.setItem('partnerOptions', JSON.stringify(selectedOptions))
   }
 
   optionButtonStateChanged = (id, isChoosed) => {
@@ -92,7 +106,7 @@ class PartnerOptions extends React.Component {
           classNames="next-button" 
           unmountOnExit>
             <Link to={RoutePagePaths.EVENT_TYPE_OPTIONS}>
-              <NextButton title="Следующий шаг" />
+              <NextButton title="Следующий шаг" handleClick={this.handleClick}/>
             </Link>
           </CSSTransition>
         </div>
